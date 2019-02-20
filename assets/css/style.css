@@ -14,7 +14,6 @@
 /* IMAGES */
 
 .player-img-box {
-    background-color: gray;
     height: 150px;
     width: 150px;
 }
@@ -25,11 +24,24 @@
     object-fit: cover;
 }
 
+/* VIDEO BG */
+#video-background {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+}
+
 
 /* BOXES */
 
 .player-box {
+    color: rgb(206, 188, 24);
     height: 30%;
     width: 100%;
-    background-color: rgba(76, 76, 117, 0.582);
+    background-color:  rgba(0, 89, 255, 0.329);
 }

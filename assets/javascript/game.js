@@ -76,6 +76,7 @@ function selectPlayer() {
         ani.detach(); ani.appendTo(".defenders");
         vader.detach(); vader.appendTo(".defenders");
         yoda.detach(); yoda.appendTo(".defenders");
+
     });
     
     $("#ani").on("click", function() {
