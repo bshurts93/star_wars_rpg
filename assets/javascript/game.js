@@ -78,6 +78,7 @@ function selectPlayer(selected) {
 
     // Move the rest of the players to the defenders div
 
+
 }
 
 selectPlayer(obi);
