@@ -8,12 +8,13 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <div class="container characters">
-        <div class="player">
+    <div class="container-fluid">
+        <div class="player" id="obi">
             <h1>Obi-Wan Kenobi</h1>
             <div class="player-img-box">
 
@@ -21,7 +22,7 @@
             <h3 class="hp">HP = 100</h3>
         </div>
 
-        <div class="player">
+        <div class="player" id="ani">
             <h1>Anakin Skywalker</h1>
             <div class="player-img-box">
 
@@ -29,7 +30,7 @@
             <h3 class="hp">HP = 100</h3>
         </div>
 
-        <div class="player">
+        <div class="player" id="vader">
             <h1>Darth Vader</h1>
             <div class="player-img-box">
 
@@ -37,7 +38,7 @@
             <h3 class="hp">HP = 100</h3>
         </div>
 
-        <div class="player">
+        <div class="player" id="yoda">
             <h1>Yoda</h1>
             <div class="player-img-box">
 
@@ -45,6 +46,11 @@
             <h3 class="hp">HP = 100</h3>
         </div>
     </div>
+
+
+    <div class="selected-player"></div>
+
+    <div class="defenders"></div>
 
 
 
@@ -58,6 +64,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>

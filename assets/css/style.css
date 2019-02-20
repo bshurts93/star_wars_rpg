@@ -1,0 +1,17 @@
+
+
+/* CHARACTERS */
+.player {
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+
+
+/* IMAGES */
+
+.player-img-box {
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
