@@ -69,21 +69,39 @@ function loadData () {
     console.log(aniHealth);
 }
 
-function selectPlayer(selected) {
-    // Move clicked player to selected player div
-    selected.on("click", function(){
-        selected.detach();
-        selected.appendTo(".selected-player");
+function selectPlayer() {
+    $("#obi").on("click", function() {
+        obi.detach(); obi.appendTo(".selected-player");
+
+        ani.detach(); ani.appendTo(".defenders");
+        vader.detach(); vader.appendTo(".defenders");
+        yoda.detach(); yoda.appendTo(".defenders");
+    });
+    
+    $("#ani").on("click", function() {
+        ani.detach(); ani.appendTo(".selected-player");
+
+        obi.detach(); obi.appendTo(".defenders");
+        vader.detach(); vader.appendTo(".defenders");
+        yoda.detach(); yoda.appendTo(".defenders");
     });
 
-    // Move the rest of the players to the defenders div
+    $("#vader").on("click", function() {
+        vader.detach(); vader.appendTo(".selected-player");
 
+        obi.detach(); obi.appendTo(".defenders");
+        ani.detach(); ani.appendTo(".defenders");
+        yoda.detach(); yoda.appendTo(".defenders");
+    });
+    $("#yoda").on("click", function() {
+        yoda.detach(); yoda.appendTo(".selected-player");
 
+        obi.detach(); obi.appendTo(".defenders");
+        ani.detach(); ani.appendTo(".defenders");
+        vader.detach(); vader.appendTo(".defenders");
+    });
 }
 
-selectPlayer(obi);
-selectPlayer(ani);
-selectPlayer(vader);
-selectPlayer(yoda);
+selectPlayer();
 
 
