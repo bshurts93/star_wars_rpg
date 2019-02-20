@@ -12,6 +12,12 @@
 
 .player-img-box {
     background-color: gray;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+.player-img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
 }
