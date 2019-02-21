@@ -18,26 +18,30 @@ var data = {
   obi: {
     name: "Obi-Wan Kenobi",
     health: 100,
-    attack: 120,
-    counter: 80
+    attack: 8,
+    attackIncrementer: 8,
+    counter: 5
   },
   ani: {
     name: "Anakin Skywalker",
     health: 90,
-    attack: 130,
-    counter: 90
+    attack: 5,
+    attackIncrementer: 5,
+    counter: 6
   },
   vader: {
     name: "Darth Vader",
     health: 140,
-    attack: 120,
-    counter: 40
+    attack: 9,
+    attackIncrementer: 9,
+    counter: 6
   },
   yoda: {
     name: "Yoda",
     health: 100,
-    attack: 120,
-    counter: 80
+    attack: 7,
+    attackIncrementer: 7,
+    counter: 5
   },
   sendData: function() {
     $("#obi-hp").text(this.obi.health);
@@ -243,5 +247,13 @@ function selectPlayer() {
     boxDisplay();
   });
 }
+
+$(document).on("click", "button", function() {
+  if (selectedPlayer === "obi") {
+    console.log("this attack: " + data.obi.attack);
+    data.obi.attackIncrementer += data.obi.attack;
+    console.log("next attack: " + data.obi.attackIncrementer);
+  }
+});
 
 selectPlayer();
