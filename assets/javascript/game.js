@@ -76,6 +76,10 @@ function boxDisplay() {
   $(".all-players").css("display", "none");
 }
 
+function addAttackBtn() {
+  $(".selected-player").append("<button>Attack</button>");
+}
+
 // USER ACTIONS
 var selectFns = {
   obiSelected: function() {
@@ -145,56 +149,68 @@ var defendFns = {
     ani.on("click", function() {
       vader.detach();
       yoda.detach();
+      addAttackBtn();
     });
     vader.on("click", function() {
       ani.detach();
       yoda.detach();
+      addAttackBtn();
     });
     yoda.on("click", function() {
       ani.detach();
       vader.detach();
+      addAttackBtn();
     });
   },
   aniChosen: function() {
     obi.on("click", function() {
       vader.detach();
       yoda.detach();
+      addAttackBtn();
     });
     vader.on("click", function() {
       obi.detach();
       yoda.detach();
+      addAttackBtn();
     });
     yoda.on("click", function() {
       obi.detach();
       vader.detach();
+      addAttackBtn();
     });
   },
   vaderChosen: function() {
     obi.on("click", function() {
       ani.detach();
       yoda.detach();
+      addAttackBtn();
     });
     ani.on("click", function() {
       obi.detach();
       yoda.detach();
+      addAttackBtn();
     });
     yoda.on("click", function() {
       obi.detach();
       ani.detach();
+      addAttackBtn();
     });
   },
   yodaChosen: function() {
     obi.on("click", function() {
       ani.detach();
       vader.detach();
+      addAttackBtn();
     });
     ani.on("click", function() {
       obi.detach();
       vader.detach();
+      addAttackBtn();
     });
     vader.on("click", function() {
       obi.detach();
       ani.detach();
+      addAttackBtn();
     });
   }
 };
