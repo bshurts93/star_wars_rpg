@@ -63,11 +63,20 @@ data.sendData();
 // -------------------------------- //
 // FUNCTIONS
 // -------------------------------- //
+
+// ADDING DOM ELEMENTS
 function createAttackBtn() {
   var newBtn = $("<button>Attack</button>");
   newBtn.appendTo(".selected-player");
 }
 
+function boxDisplay() {
+  $(".selected-player").css("display", "block");
+  $(".defenders").css("display", "block");
+  $(".all-players").css("display", "none");
+}
+
+// USER ACTIONS
 var selectFns = {
   obiSelected: function() {
     obi.detach();
@@ -195,23 +204,27 @@ function selectPlayer() {
     selectFns.obiSelected();
     selectedPlayer = "obi";
     defendFns.obiChosen();
+    boxDisplay();
   });
 
   ani.on("click", function() {
     selectFns.aniSelected();
     selectedPlayer = "ani";
     defendFns.aniChosen();
+    boxDisplay();
   });
 
   vader.on("click", function() {
     selectFns.vaderSelected();
     selectedPlayer = "vader";
     defendFns.vaderChosen();
+    boxDisplay();
   });
   yoda.on("click", function() {
     selectFns.yodaSelected();
     selectedPlayer = "yoda";
     defendFns.yodaChosen();
+    boxDisplay();
   });
 }
 
