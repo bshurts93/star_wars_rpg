@@ -257,3 +257,18 @@ $(document).on("click", "button", function() {
 });
 
 selectPlayer();
+
+// I ran out of time to complete the secondary challenge, but was able to get the basic structure of the RPG down for the character selection.
+// What remains to be done is the application of player stats in the battle portion.
+
+// REMAINING PSEUDO CODE //
+
+// MAKE ATTACK BUTTON GET PLAYER ATTACK VALUE AND DEDUCT FROM DEFENDER HEALTH
+
+// DEFENDER COUNTER ATTACK APPLIED TO USER PLAYER
+
+// IF USER HEALTH <= 0, LOSE
+
+// IF DEFENDER HEALTH <= 0, BRING ON NEXT DEFENDER
+
+// IF ALL DEFENDERS HEALTH <= 0, USER WINS!

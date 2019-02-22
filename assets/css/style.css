@@ -14,12 +14,14 @@
 .player-img-box {
   height: 150px;
   width: 150px;
+  background-color: azure;
+  object-fit: cover;
 }
 
 .player-img {
   display: block;
   height: 100%;
-  object-fit: cover;
+  width: 250px;
 }
 
 /* VIDEO BG */
@@ -42,6 +44,7 @@
   width: 80%;
   margin: 0 auto;
   background-color: rgba(0, 89, 255, 0.329);
+  border-radius: 10px;
 }
 
 .all-players {
